@@ -10,5 +10,9 @@ print(fruits)
 price=[100,300,200,400,600]
 fruits.extend(price)
 print(fruits)
-
+print(fruits.count("apple"))
+x=[1,2,3]
+print(x)
+x=fruits.copy()
+print(x)
 
