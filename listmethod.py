@@ -15,4 +15,5 @@ x=[1,2,3]
 print(x)
 x=fruits.copy()
 print(x)
-
+x.clear()
+print(x)
