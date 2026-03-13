@@ -14,9 +14,20 @@ while True:
         if len(books)==0:
             print(" no books available")              
         else:
-            print("this are books" , {books})    
+            print("this are books" , books)    
     elif choice==3:
-        pass
+        if len(books)>0:
+            old_book_title=input("book name serach here")
+            if old_book_title in books:
+                new_books_title=input("enter new book title").capitalize()
+                books[books.index(old_book_title)]=new_books_title.capitalize()
+                print(f"{old_book_title} update to new succefulll")
+            else:
+                print(f"{old_book_title} book tile is not found try again")    
+
+        else:
+           print(f"{old_book_title} book tile is not found try again")   
+
     elif choice==4:
         pass
     elif choice==5:
